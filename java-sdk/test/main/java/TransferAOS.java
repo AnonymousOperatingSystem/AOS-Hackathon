@@ -21,7 +21,7 @@ public class TransferAOS {
         System.out.println(aosApi.getCurrencyBalance("aosio.token", "aweoswallet1", "AOS"));
 
         // --- sign the transaction of token transfer
-        String privateKey = "5JDGy4o9mfHHB81CxuU5RwrrFxuZjZbDaSQiPLhipXmDRcDmVUM"; //replace the real private key
+        String privateKey = ""; //replace the real private key
         String from = "aweoswallet1";  // from account
         String to = "madajiasijia"; // to account
         String quantity = "0.0001 AOS"; //value
