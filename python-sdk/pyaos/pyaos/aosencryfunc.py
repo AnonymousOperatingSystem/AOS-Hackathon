@@ -12,7 +12,10 @@ def ecdsa_verifing(signature, data, verifing_key, hashfunc=hashlib.sha256):
     :param hashfunc:
     :return:
     """
-    verify = verifing_key.verify(signature=signature, data=data, hashfunc=hashfunc)
+    try:
+        verify = verifing_key.verify(signature=signature, data=data, hashfunc=hashfunc)
+    except:
+        verify = False
     return verify
 
 def ecdsa_sign(data, privkey, hashfunc=hashlib.sha256):
@@ -73,5 +76,3 @@ def list_to_binary(list):
     for i in list:
         bin += bytes([i])
     return bin
-a = Hash(b'hello')
-print(a)
