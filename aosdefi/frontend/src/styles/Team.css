@@ -1,0 +1,69 @@
+.t-section-body {
+  background-color: transparent;
+  /* min-height: 418px; */
+  border: none;
+}
+.am-list-body {
+  border-radius: 10px;
+}
+.t_container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 0px 20px;
+}
+.t_r_title {
+  color: #642c20;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 19px;
+}
+.t_r_left {
+  color: #642c20;
+  font-size: 14px;
+  font-weight: 500;
+}
+.t_r_right {
+  color: #ff7644;
+  font-weight: bold;
+  font-size: 13px;
+}
+.t_invite_left {
+  color: #642c20;
+  font-size: 13px;
+  opacity: 0.5;
+}
+.t_invite_right {
+  color: #642c20;
+  font-size: 13px;
+  font-weight: 500;
+}
+.t_line {
+  background-color: #dddddd;
+  border-radius: 4px;
+  width: 100%;
+  height: 1px;
+  margin-top: 14px;
+}
+.h_r_Deposit {
+  width: 92px;
+  height: 38px;
+  background-color: #ff9f00;
+  color: white;
+  text-align: center;
+  border-radius: 19px;
+  line-height: 38px;
+}
+.h_r_TakeOut {
+  width: 92px;
+  height: 38px;
+  background-color: #642c20;
+  color: white;
+  text-align: center;
+  border-radius: 19px;
+  line-height: 38px;
+  margin-left: 28px;
+}
+
+.am-list-header {
+  padding: 0px;
+}
