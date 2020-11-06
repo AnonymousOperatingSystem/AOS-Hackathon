@@ -1,0 +1,20 @@
+//colors
+$secondColor: white;
+$dividerColor: rgba(238, 238, 238, 0.6);
+$primayTextColor: #a13d0d;
+//size
+$viewPadding: 14px;
+
+//mixin
+@mixin container {
+  margin: 0px $viewPadding;
+  background-color: $secondColor;
+  border-radius: 9px;
+  margin-bottom: 15px;
+}
+
+input {
+  background: none;
+  outline: none;
+  border: none;
+}
