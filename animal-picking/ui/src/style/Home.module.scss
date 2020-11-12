@@ -1,0 +1,137 @@
+@import "./Global.scss";
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.background {
+  background-image: url("../assets/home_bg.png");
+  height: 713px;
+  width: 320px;
+  // width: 358px;
+  // height: 798px;
+  background-size: cover;
+}
+.title {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 69px;
+  font-size: 14px;
+  color: #f5ad05;
+  font-weight: 500;
+  text-align: center;
+}
+.animalContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 245px;
+  margin-top: 84px;
+  margin-left: 37px;
+  background-color: transparent;
+  box-sizing: border-box;
+  padding-left: 4px;
+  padding-right: 3px;
+}
+@mixin animalItemRoot_320 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  width: 51px;
+  height: 51px;
+  margin-top: 8px;
+}
+.animalItem320N {
+  @include animalItemRoot_320();
+  background-image: url("../assets/animal_n.png");
+}
+.animalItem320S {
+  @include animalItemRoot_320();
+  background-image: url("../assets/animal_s.png");
+}
+.doneRoot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@mixin buttonBase {
+  font-size: 13px;
+  color: $primayTextColor;
+  font-weight: 600;
+  box-sizing: border-box;
+  background-size: cover;
+}
+:global(.doneBtn) {
+  @include buttonBase();
+  margin-top: 28px;
+  text-align: center;
+  background-image: url("../assets/done_n.png");
+  width: 117px;
+  height: 51px;
+  padding-top: 12px;
+}
+:global(.doneBtn):active {
+  background-image: url("../assets/done_s.png");
+}
+.ruleRoot {
+  margin-top: -30px;
+  display: flex;
+  padding: 0px 20px 0px 21px;
+  justify-content: space-between;
+}
+:global(.recordBtn) {
+  @include buttonBase();
+  width: 90px;
+  height: 55px;
+  background-image: url("../assets/left_n.png");
+  padding-left: 20px;
+  padding-top: 25.2px;
+}
+:global(.recordBtn):active {
+  background-image: url("../assets/left_s.png");
+}
+:global(.ruleBtn) {
+  @include buttonBase();
+  width: 90px;
+  height: 55px;
+  padding-left: 40px;
+  padding-top: 25.2px;
+  background-image: url("../assets/right_n.png");
+}
+:global(.ruleBtn):active {
+  background-image: url("../assets/right_s.png");
+}
+.listTitle {
+  text-align: center;
+  font-size: 14px;
+  color: $primayTextColor;
+  font-weight: 500;
+  position: relative;
+  top: 120px;
+}
+.list {
+  overflow: auto;
+  height: 110px;
+  position: relative;
+  top: 120px;
+  padding: 0px;
+}
+.listItem {
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 15px;
+}
+.itemTitle {
+  font-size: 14px;
+  color: $primayTextColor;
+  opacity: 0.6;
+  margin-left: 6px;
+  word-break: break-all;
+}
